@@ -8,5 +8,6 @@ urlpatterns = [
 
 
 	path('first/', views.index),
+	path('second/', views.index01),
     #path('result/', admin.site.urls),
 ]

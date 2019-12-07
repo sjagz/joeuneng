@@ -3,4 +3,9 @@ from django.http import HttpResponse
 
 def index(request):
 
-	return HttpResponse("hello world , joeuneng first , git changed finish , python anywhere django delelte")
+	return render(request, 'elections/base.html')
+	#return HttpResponse("hello world , joeuneng first , git changed finish , python anywhere django delelte")
+
+def index01(request):
+
+	return render(request, 'elections/Business field.html')

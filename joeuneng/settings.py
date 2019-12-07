@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'elections',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'elections', 'static')
+]
+ 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
