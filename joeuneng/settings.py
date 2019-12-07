@@ -119,3 +119,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
